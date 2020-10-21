@@ -2,19 +2,18 @@ package main
 
 import "fmt"
 
-func Burbuja(listaDeNumeros []int64){
+func Burbuja(lista []int64) {
 	var aux int64
-
-	for i := 0; i < len(listaDeNumeros); i++ {
-		for j := 0; j < len(listaDeNumeros); j++ {
-			if listaDeNumeros[i] < listaDeNumeros[j] {
-				aux = listaDeNumeros[i]
-				listaDeNumeros[i] = listaDeNumeros[j]
-				listaDeNumeros[j] = aux
+	for i := range lista{
+		for j := range lista {
+			if lista[i] < lista[j] {
+				aux = lista[i]
+				lista[i] = lista[j]
+				lista[j] = aux
 			}
 		}
 	}
-	//return listaDeNumeros
+	
 }
 
 func main(){
@@ -28,5 +27,4 @@ func main(){
 		
 	}
 
-	//fmt.Println(burbuja(s)) 
 }
