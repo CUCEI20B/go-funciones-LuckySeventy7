@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func burbuja(listaDeNumeros []int64){
+func Burbuja(listaDeNumeros []int64){
 	var aux int64
 
 	for i := 0; i < len(listaDeNumeros); i++ {
